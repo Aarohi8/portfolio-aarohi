@@ -16,6 +16,8 @@ This repository contains the source code for  **Aarohi Jain's static portfolio w
 ## 🚀 Deployment Architecture
 
 ### 1. **Amazon S3 Bucket**
+<img width="1920" height="1080" alt="Screenshot (2)" src="https://github.com/user-attachments/assets/63a8b8ff-3aa7-4a20-bd72-0daf44d709d8" />
+
 
 * Stores all static assets (
 
@@ -24,6 +26,8 @@ This repository contains the source code for  **Aarohi Jain's static portfolio w
 * Public access configured via  **Bucket Policy** .
 
 ### 2. **Amazon CloudFront CDN**
+<img width="1920" height="1080" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/88445f16-bb53-4ba4-ad7d-8ca721241efd" />
+
 
 * Distributes the S3 website globally with low latency.
 * Uses S3 Bucket Website Endpoint as the  **Origin** .
@@ -58,11 +62,14 @@ root/
 ## 🌐 AWS S3 Setup Summary
 
 1. Create an S3 bucket with public access for website hosting.
-2. Upload all website files.
-3. Enable **Static Website Hosting** and set:
+2. <img width="1920" height="1080" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/1af23a0f-3543-4c75-bae5-3129841e9916" />
+
+3. Upload all website files.
+4. Enable **Static Website Hosting** and set:
    * Index Document: `index.html`
    * Error Document: `404.html` (if any)
-4. Apply a bucket policy to allow public `GET` access.
+5. Apply a bucket policy to allow public `GET` access.
+<img width="1920" height="1080" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/882dc80e-f545-41a5-b95a-4a0614bfe27d" />
 
 ---
 
@@ -100,3 +107,4 @@ For any inquiries or deployment questions, feel free to reach out.
 ---
 
 Thank you for reviewing this project!
+
